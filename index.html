@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>CivicEye AI</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">👁 CivicEye <span class="ai">AI</span></div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Analyze</a>
+<a href="/features">Features</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>AI Powered Civic Safety Detection</h1>
+
+<p>
+Detect potholes, garbage, and urban hazards using AI.
+</p>
+
+</div>
+
+<div class="hero-glow"></div>
+
+</section>
+
+
+<div class="container">
+
+<h2>Upload Image</h2>
+
+<input type="file" id="imageInput">
+
+<button onclick="analyzeImage()">Analyze Image</button>
+
+
+<h2>Live Camera</h2>
+
+<video id="camera" autoplay></video>
+
+<button onclick="captureFrame()">Capture & Analyze</button>
+
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+<p>AI is analyzing hazards...</p>
+
+</div>
+
+
+<div id="riskMeter">
+
+<div id="riskBar"></div>
+
+</div>
+
+
+<div id="resultBox"></div>
+<button onclick="copyComplaint()">Copy Complaint</button>
+<h2>CivicEye AI Assistant</h2>
+
+<div id="chatbox">
+
+<div id="chatMessages"></div>
+
+<input
+type="text"
+id="userInput"
+placeholder="Ask about civic problems...">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
+</div>
+
+
+<!-- <footer class="footer">
+
+<div class="footer-content">
+
+<h2>CivicEye AI</h2>
+
+<p>
+AI powered system that detects public safety hazards
+from images and camera feeds.
+</p>
+
+<ul>
+
+<li>AI hazard detection</li>
+<li>Live camera analysis</li>
+<li>Location based authority</li>
+<li>Safety risk meter</li>
+
+</ul>
+
+</div>
+
+</footer>  -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-section">
+<h3>CivicEye AI</h3>
+<p>
+CivicEye AI is an intelligent civic safety platform that uses AI
+to detect public hazards such as potholes, garbage dumps,
+broken roads and infrastructure issues.
+It helps citizens quickly analyze problems and generate
+complaints for the responsible authorities.
+</p>
+</div>
+
+
+<div class="footer-section">
+<h3>Features</h3>
+<ul>
+<li>AI Hazard Detection</li>
+<li>Risk Level Analysis</li>
+<li>AI Complaint Generator</li>
+<li>PDF Complaint Download</li>
+<li>AI Chat Assistant</li>
+<li>Location Based Authority</li>
+</ul>
+</div>
+
+
+<div class="footer-section">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="features.html">Features</a></li>
+<li><a href="#">AI Analysis</a></li>
+<li><a href="safety.html">Safety Tips</a></li>
+</ul>
+</div>
+
+
+<div class="footer-section">
+<h3>Resources</h3>
+<ul>
+<li><a href="https://pgportal.gov.in">Government Complaint Portals</a></li>
+<li><a href="https://swachhbharatmission.gov.in">Swachh Bharat Mission</a></li>
+<li><a href="https://morth.nic.in">Road Safety Information</a></li>
+<li><a href="https://swachhbharatmission.gov.in">Urban Civic Awareness</a></li>
+</ul>
+</div>
+
+
+<div class="footer-section">
+<h3>Contact</h3>
+<p>Email: support@civiceye.ai</p>
+<p>Location: India</p>
+<p>Built for Civic Innovation Hackathon</p>
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+<p>© 2026 CivicEye AI | AI Powered Civic Safety Platform</p>
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+<li><a href="https://ai.google/responsibility">AI Transparency</a></li>
+</div>
+
+</footer>
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html> 
